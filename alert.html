@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="http://code.jquery.com/jquery-1.9.1.js"></script>
+    <style>
+        .k-line{
+        	display: inline-block;
+        	width: 15px;
+        	height: 15px;
+        	border-radius: 15px;
+        	margin-top: 20px;
+        	background-color: #fff;
+        }
+        @keyframes k-loadingE{
+        	/*0% {
+        		transform: translateY(0);
+        		opacity: 1
+        	}
+        	30% {
+        		transform: translateY(0);
+        		opacity: .3;
+        	}
+        	50% {
+        		transform: translateY(-20px);
+        		opacity: .8;
+        	}
+        	70% {
+        		transform: translateY(3px);
+        		opacity: .8;
+        	}
+        	85% {
+        		transform: translateY(-3px);
+        	}
+        	100% {
+        		transform: translateY(0);
+        		opacity: 1;
+        	}*/
+        	50% {
+        		height: 40px;
+        	}
+        	100% {
+        		height: 15px;
+        	}
+        }
+        .k-lineA-1{
+        	animation: k-loadingE 1.5s 0s infinite;
+        }
+        .k-lineA-2{
+        	animation: k-loadingE 1.5s 0.3s infinite;
+        }
+        .k-lineA-3{
+        	animation: k-loadingE 1.5s 0.6s infinite;
+        }
+        .k-lineA-4{
+        	animation: k-loadingE 1.5s 0.9s infinite;
+        }
+        .k-lineA-5{
+        	animation: k-loadingE 1.5s 1.2s infinite;
+        }
+    </style>
+</head>
+<body style="background-color: #000">
+	<div class="wrap color-A">
+		<div class="k-line k-lineA-1"></div>
+		<div class="k-line k-lineA-2"></div>
+		<div class="k-line k-lineA-3"></div>
+		<div class="k-line k-lineA-4"></div>
+		<div class="k-line k-lineA-5"></div>
+	</div>
+</body>
+</html>
